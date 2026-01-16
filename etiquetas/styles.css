@@ -1,7 +1,26 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffe7af;
+    padding: 20px;
+    ol {
+        background: #fff4e5;
+        padding: 20px;
+        border: 2px solid #ffd2a6;
+        border-radius: 10px;
+        ol {
+            background: #fff9f0;
+            padding: 15px;
+            border: 2px solid #ffddb8;
+            border-radius: 8px;
+        }
+    }
+    ul {
+        background: #e6f7ff;
+        padding: 20px;
+        border: 2px solid #b3e0ff;
+        border-radius: 10px;
+    }
 }
 
 /* 
