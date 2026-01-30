@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y arreglos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Listas y arreglos</h1>
+        <summary>En esta página se presentan listas y arreglos en HTML y JavaScript</summary>
+    </header>
+    <main>
+        <button id="mostrarLista">Mostrar Lista</button>
+        <section id="listaCiudades"></section>
+        <section>
+            <h2>Cuadro comparativo de DOM vs BOM</h2>
+            <table>
+                <tr>
+                    <th>DOM (Document Object Model)</th>
+                    <th>BOM (Browser Object Model)</th>
+                </tr>
+                <tr>
+                    <td>Representa la estructura del documento HTML.</td>
+                    <td>Representa el navegador web y sus componentes.</td>
+                </tr>
+                <tr>
+                    <td>Permite manipular el contenido y la estructura del documento.</td>
+                    <td>Permite interactuar con el navegador, como abrir nuevas ventanas o manejar el historial.</td>
+                </tr>
+                <tr>
+                    <td>Se centra en los elementos del documento, como etiquetas, atributos y texto.</td>
+                    <td>Se centra en objetos del navegador, como la ventana, el historial y la ubicación.</td>
+                </tr>
+                <tr>
+                    <td>Es independiente del navegador.</td>
+                    <td>Depende del navegador y sus características específicas.</td>
+                </tr>
+                <tr>
+                    <td>Utiliza métodos como getElementById, querySelector, etc.</td>
+                    <td>Utiliza métodos como alert, confirm, open, etc.</td>
+                </tr>
+                <tr>
+                    <td>Se utiliza principalmente para manipular el contenido de la página web.</td>
+                    <td>Se utiliza para controlar aspectos del navegador y la ventana del navegador.</td>
+                </tr>
+                <tr class="has-js">
+                    <td>document.getElementById("miElemento").innerHTML = "Hola Mundo";</td>
+                    <td>window.open("https://www.ejemplo.com");</td>
+                </tr>
+                <tr>
+                    <td>Proporciona una representación estructurada del documento.</td>
+                    <td>No proporciona una representación estructurada, sino acceso a las funcionalidades del navegador.</td>
+                </tr>
+                <tr>
+                    <td>Se utiliza para crear, eliminar o modificar elementos del DOM.</td>
+                    <td>Se utiliza para gestionar ventanas, pestañas y la comunicación con el usuario.</td>
+                </tr>
+                <tr>
+                    <td>Ejemplo de uso: Manipulación del contenido de una página web.</td>
+                    <td>Ejemplo de uso: Control del comportamiento del navegador.</td>
+                </tr>
+                <tr>
+                    <td>Interacción con eventos del documento, como clics y cambios de contenido.</td>
+                    <td>Interacción con eventos del navegador, como cambios de tamaño de ventana y navegación.</td>
+                </tr>
+                <tr class="has-js">
+                    <td>document.addEventListener("click", function() { ... });</td>
+                    <td>window.onresize = function() { ... };</td>
+                </tr>
+                <tr>
+                    <td>Facilita la creación de interfaces dinámicas y responsivas.</td>
+                    <td>Facilita la gestión de la experiencia del usuario en el navegador.</td>
+                </tr>
+                <tr>
+                    <td>Actualizar el contenido de una página sin recargarla.</td>
+                    <td>Mostrar alertas o confirmaciones al usuario.</td>
+                </tr>
+                <tr>
+                    <td>Utilizado en el desarrollo web para manipular el contenido de las páginas.</td>
+                    <td>Utilizado en el desarrollo web para controlar aspectos del navegador y la interacción con el usuario.</td>
+                </tr>
+                <tr>
+                    <td>Cambiar el estilo de un elemento HTML.</td>
+                    <td>Redirigir a otra página web.</td>
+                </tr>
+                <tr class="has-js">
+                    <td>document.getElementById("miElemento").style.color = "red";</td>
+                    <td>window.location.href = "https://www.ejemplo.com";</td>
+                </tr>
+                <tr>
+                    <td>En resumen, el DOM se enfoca en la estructura y contenido del documento, mientras que el BOM se enfoca en la interacción con el navegador.</td>
+                    <td>En resumen, el BOM se enfoca en la interacción con el navegador y sus funcionalidades.</td>
+                </tr>
+            </table>
+            <p>Ambos son esenciales para el desarrollo web moderno y trabajan juntos para crear experiencias web dinámicas.</p>
+        </section>
+    </main>
+    <footer>
+        <p>@2026 Adrián Eduardo Hernández Ramírez</p>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
