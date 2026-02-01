@@ -1,7 +1,7 @@
 document.getElementById("mostrarLista").addEventListener("click", function() {
     var secciónLista = document.getElementById("listaCiudades");
     if (secciónLista.innerHTML) {
-        secciónLista.innerHTML = "";
+        secciónLista.replaceChildren();
         return;
     }
     const ciudades = ["Nueva York", "Los Ángeles", "Chicago", "Houston", "Phoenix"];
