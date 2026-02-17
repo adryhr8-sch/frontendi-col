@@ -55,7 +55,7 @@ document.getElementById("limpiar").addEventListener("click", function () {
 El número más grande que ingresaste fue: ${Math.max(...arreglo)}`,
   );
 
-  document.getElementById("num").value = "";
+  entrada.value = "";
   resultado.replaceChildren();
   historial.replaceChildren();
 
