@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: green;
+    background-color: aqua;
+    font-weight: 800;
+    &:hover {
+        background-color: chartreuse;
+    }
+}
+
+h3 {
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+#producto {
+    margin-top: 10px;
+    font-size: 40px;
+}
