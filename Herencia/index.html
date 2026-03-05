@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herencia clases</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Herencia y sobrecarga</h1>
+      <hr noshade />
+    </header>
+    <main>
+      <section>
+        <h2>Investigación Teórica</h2>
+        <div id="inv">
+          <h3>Clase</h3>
+          <p>
+            Una clase es una plantilla o molde para crear objetos. Define qué
+            propiedades (datos) y métodos (funciones) tendrá un objeto. Antes de
+            las clases, usábamos funciones constructoras, pero la clase organiza
+            todo en un solo bloque de código.
+          </p>
+          <br />
+          <h3>Herencia</h3>
+          <p>
+            La herencia permite que una clase (clase hija) adopte las
+            propiedades y métodos de otra clase (clase padre). Se usa la palabra
+            clave extends.
+          </p>
+          <br />
+          <h3>Sobrecarga de métodos</h3>
+          <p>
+            La sobrescritura ocurre cuando una clase hija define un método que
+            ya existe en la clase padre. Al hacerlo, la versión de la clase hija
+            "reemplaza" o redefine el comportamiento para sus propias
+            instancias.
+          </p>
+          <br />
+          <h3>super()</h3>
+          <p>
+            La función super() se usa dentro del constructor de una clase hija
+            para llamar al constructor de la clase padre.
+          </p>
+          <br />
+          <hr noshade />
+          <p>Referencias:</p>
+          <p></p>
+          <p>
+            <a
+              href="https://www.salsify.com/blog/engineering/super-methods-in-javascript"
+              >Freeman, D. (s. f.). Invoking Super Methods in JavaScript.</a
+            >
+            <br />
+            <a href="https://lenguajejs.com/javascript/oop/herencia-clases/"
+              >Herencia de Clases - Javascript en español. (s. f.).</a
+            >
+            <br />
+            <a href="https://javascript.info/class-inheritance"
+              >Kantor, I. (s. f.). Class inheritance.</a
+            >
+          </p>
+        </div>
+      </section>
+      <hr noshade />
+      <section>
+        <h2>Resultado</h2>
+        <br />
+        <button id="detalle">Mostrar detalle</button>
+        <br />
+        <div id="resultado"></div>
+      </section>
+    </main>
+    <footer>
+      <hr noshade />
+      <p>©2026 Adrián Hernández</p>
+    </footer>
+  </body>
+  <script src="clases.js"></script>
+</html>
