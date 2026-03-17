@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tienda</h1>
+    </header>
+    <main>
+      <form id="nuevoEmpleado">
+        <label for="nombre">Nombre:</label>
+        <br />
+        <input type="text" name="nombre" id="nombre" required />
+        <br />
+        <label for="puesto">Puesto:</label>
+        <br />
+        <input type="text" name="puesto" id="puesto" required />
+        <br />
+        <label for="salario">Salario:</label>
+        <br />
+        <input type="number" name="salario" id="salario" required />
+        <br />
+        <label for="identificador">Identificador:</label>
+        <br />
+        <input type="text" name="identificador" id="identificador" required />
+        <br />
+        <button type="button" id="agregar">Agregar</button>
+      </form>
+      <button type="button" id="mostrar">Mostrar lista</button>
+      <button type="button" id="filtrar">Filtrar lista</button>
+      <button type="button" id="ordenar">Ordenar lista</button>
+      <button type="button" id="eliminar">Eliminar</button>
+      <table id="tablaEmp"></table>
+    </main>
+    <footer>
+      <p>©2026 Adrián Hernández</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
