@@ -59,14 +59,17 @@ document.getElementById("eliminar").addEventListener("click", function () {
   localStorage.setItem("tienda", JSON.stringify(tienda.listaEmpleados()));
 });
 
-document.getElementById("mostrar").addEventListener("click", function () {
+document.getElementById("mostrar").addEventListener("click", function (event) {
   let lista = tienda.listaEmpleados();
-  if (lista.length === 0) {
-    alert("No hay empleados para mostrar.");
-    return;
+
+  if (event.isTrusted) {
+    if (lista.length === 0) {
+      alert("No hay empleados para mostrar.");
+      return;
+    }
   }
 
-  tabla.innerHTML = thead;
+  tabla.innerHTML = event.isTrusted ? thead : "";
   lista.forEach((empleado) => {
     let fila = tabla.insertRow();
     let celda1 = fila.insertCell();
