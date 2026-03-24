@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+main {
+  flex: 1;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#botones-operaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  button {
+    width: 110px;
+    background-color: aqua;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    &:hover {
+      background-color: lightblue;
+    }
+  }
+}
+
+#historial {
+  width: 75%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  th,
+  td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+#resultado {
+  font-size: 90px;
+  height: 270px;
+}
+
+footer {
+  margin-top: auto;
+}

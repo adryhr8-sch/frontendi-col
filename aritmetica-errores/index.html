@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>+-×/</h1>
+    </header>
+    <main>
+      <section>
+        <form id="entradas">
+          <label for="a">Valor 1:</label>
+          <input name="a" id="a" />
+          <br />
+          <label for="b">Valor 2:</label>
+          <input name="b" id="b" />
+        </form>
+        <br />
+        <div id="botones-operaciones">
+          <button type="click" id="sumar">Sumar</button>
+          <button type="click" id="restar">Restar</button>
+          <button type="click" id="multiplicar">Multiplicar</button>
+          <button type="click" id="dividir">Dividir</button>
+        </div>
+      </section>
+      <section>
+        <h2>Resultado</h2>
+        <div id="resultado"></div>
+      </section>
+      <section>
+        <table id="historial"></table>
+      </section>
+    </main>
+    <footer>
+      <p>©2026 Adrián Hernández</p>
+    </footer>
+    <script src="errores.js"></script>
+  </body>
+</html>
