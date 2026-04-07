@@ -1,0 +1,28 @@
+
+Lista original:
+adrian
+juan
+carlos
+david
+samuel
+christian
+
+Lista en mayúsculas:
+ADRIAN
+JUAN
+CARLOS
+DAVID
+SAMUEL
+CHRISTIAN
+
+Lista ordenada alfabéticamente:
+adrian
+carlos
+christian
+david
+juan
+samuel
+
+Nombre más largo: christian
+
+Total de nombres: 6
